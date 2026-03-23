@@ -22,8 +22,7 @@ for i, test in enumerate(test_cases):
     print(f"Test {i+1}: {test['question']}")
 
     answer = get_rag_answer(test["question"])
-    print("Answer:", answer)
-
+    
     score = evaluate(answer, test["expected_keywords"])
     print("Score:", score)
 
